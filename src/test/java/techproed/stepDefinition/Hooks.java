@@ -18,7 +18,9 @@ public class Hooks {
      Hooks class'ını farklı bir package da oluşturmak istersek Runner class'ındaki glue parametresine bu
      package'ı tanımlamaız gerekir. Ancak Hooks class'ını direk stepDefinition package'ı altında oluşturursak
      Runner class'ındaki glue parametresinde stepDefinition package'ı tanımlı olduğu için başka bir işlem yapmama
-     gerek kalmaz.Glue parametresinde stepDefinition package'ı tanımlı olduğu için direkt hook class'ınıda kullanabiliriz.
+     gerek kalmaz.Glue parametresinde stepDefinition package'ı tanımlı olduğu için direkt hook class'ınıda
+     kullanabiliriz.
+
      */
     @Before//import io.cucumber.java.Before;
     public void setUp() throws Exception {
@@ -36,6 +38,7 @@ public class Hooks {
     Scenario'dan önce çalışmasını istediğimiz @Before methodunun notasyonuna parametre
     olarak scenario'ya tanımladığımız tag'ı belirte biliriz. Dolayısıyla sadece
     parametre olarak belirttiğimiz @Before methodu Scenario'dan önce çalışacaktır
+
      */
 
     @After//import io.cucumber.java.After;
@@ -48,5 +51,6 @@ public class Hooks {
 
 
     }
+
     //Bu method fail olan scenario'larda fail olan kısmın resmini rapora ekleyecektir.
 }

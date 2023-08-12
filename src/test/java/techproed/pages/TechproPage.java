@@ -18,4 +18,5 @@ public class TechproPage {
     @FindBy(xpath = "(//*[text()='Free Java'])[4]")
     public WebElement freeJavaLink;
 
+
 }

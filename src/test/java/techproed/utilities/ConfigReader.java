@@ -6,9 +6,10 @@ import java.util.Properties;
 
 public class ConfigReader {
     /*
-    .properties uzantılı dosyaya erişebilmemiz için Properties class'ından obje oluşturmamız gerekir.
+    ".properties" uzantılı dosyaya erişebilmemiz için Properties class'ından obje oluşturmamız gerekir.
      bu oluşturduğumuz obje ile akışa aldığımız dosya yolunu load(fis) methodu ile properties dosyasındaki
      key değerini return edebiliriz
+
      */
     static Properties properties;
     static {
