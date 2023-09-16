@@ -18,10 +18,12 @@ public class GoogleStepDefinition {
         Driver.getDriver().get(ConfigReader.getProperty(url));
 
     }
-//-------------------------------------------------------------------
+
     @Then("kullanici arama kutusunda {string} aratir")
     public void kullaniciAramaKutusundaAratir(String str) {
         googlePage.aramaKutusu.sendKeys(ConfigReader.getProperty(str), Keys.ENTER);
+        System.out.println();
+
     }
 
     @And("kullanici sayfa basliginin {string} icerdigini test eder")

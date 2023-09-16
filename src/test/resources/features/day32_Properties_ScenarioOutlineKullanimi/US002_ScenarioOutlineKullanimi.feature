@@ -9,6 +9,7 @@ Feature: US002 Google Sayfasi Testi
     And sayfayi kapatir
 
     Examples:
+
       | aranacakAraclar |
       | volvo           |
       | ford            |
