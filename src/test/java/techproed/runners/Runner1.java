@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
         "json:target/json-reports/cucumber2.json",
         "junit:target/xml-report/cucumber.xml",
         "rerun:TestOutput/failed_scenario.txt"},
-
         //rerun ile belirttiğimiz dosyada fail olan senaryolar tutulur.
 
         features = "src/test/resources/features",

@@ -50,6 +50,7 @@ public class GoogleStepDefinition {
     @And("kullanici verilen bilgiler ile arama yapar")
     public void kullaniciVerilenBilgilerIleAramaYapar(DataTable data) {
         System.out.println(data.asList());
+        System.out.println();
         for (int i = 1; i < data.asList().size(); i++) {
             googlePage.aramaKutusu.sendKeys(data.asList().get(i),Keys.ENTER);
             ReusableMethods.bekle(2);

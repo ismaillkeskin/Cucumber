@@ -35,7 +35,7 @@ public class BlueRentalStepDefinition {
             blueRentalPage.emailBox.sendKeys(w.get("email"),Keys.TAB,w.get("password"),Keys.ENTER);
             ReusableMethods.bekle(3);
             Driver.getDriver().navigate().back();
-            ReusableMethods.bekle(3);
+            ReusableMethods.bekle(4);
         }
     }
 
@@ -62,6 +62,7 @@ public class BlueRentalStepDefinition {
             ReusableMethods.bekle(2);
             blueRentalPage.okButton.click();
             ReusableMethods.bekle(2);
+
 
         }
     }
