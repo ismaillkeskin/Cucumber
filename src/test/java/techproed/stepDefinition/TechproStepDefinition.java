@@ -26,6 +26,7 @@ public class TechproStepDefinition {
     @Then("arama kutusunda mobile aratir")
     public void aramaKutusundaMobileAratir() {
         techproPage.aramaKutusu.sendKeys("mobile");
+        ReusableMethods.bekle(3);
         ReusableMethods.bekle(2);
     }
 
@@ -38,6 +39,7 @@ public class TechproStepDefinition {
     @And("basligin Mobile icerdigini test eder")
     public void basliginMobileIcerdiginiTestEder() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Mobile"));
+        ReusableMethods.bekle(2);
     }
 
     @Then("arama kutusunda java aratir")
